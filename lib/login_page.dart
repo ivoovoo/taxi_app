@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:milania_taxi/main_page.dart';
 
-import 'main_page.dart';
+import 'main_page_view.dart';
 
 const blackColor = Color(0xff151513);
 
