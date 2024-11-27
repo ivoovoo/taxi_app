@@ -3,9 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:milania_taxi/main_page.dart';
 
-import 'main_page_view.dart';
-
-const blackColor = Color(0xff151513);
+import 'constants.dart';
 
 class Login extends StatelessWidget {
   const Login({super.key});
@@ -90,11 +88,13 @@ class Login extends StatelessWidget {
                       Row(
                         children: [
                           Expanded(
-                            child: LoginButton(onTap: () {
-                              Navigator.of(context).push(CupertinoPageRoute(builder: (ctx) {
-                                return MainPage();
-                              }));
-                            },),
+                            child: LoginButton(
+                              onTap: () {
+                                Navigator.of(context).push(CupertinoPageRoute(builder: (ctx) {
+                                  return MainPage();
+                                }));
+                              },
+                            ),
                           ),
                         ],
                       ),
@@ -131,9 +131,12 @@ class Login extends StatelessWidget {
 
 class LoginButton extends StatelessWidget {
   const LoginButton({
-    super.key, this.onTap,
+    super.key,
+    this.onTap,
   });
+
   final void Function()? onTap;
+
   @override
   Widget build(BuildContext context) {
     return Container(
