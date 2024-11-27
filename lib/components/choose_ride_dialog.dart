@@ -7,6 +7,7 @@ import '../constants.dart';
 import 'button_with_title.dart';
 import 'cars_row.dart';
 import 'debit_card_row.dart';
+import 'destinations_block.dart';
 
 class ChooseRideDialog extends StatelessWidget {
   const ChooseRideDialog({
