@@ -5,9 +5,9 @@ import '../constants.dart';
 
 class PlusButton extends StatelessWidget {
   const PlusButton({
-    super.key,
+    super.key, this.onTap,
   });
-
+  final void Function()? onTap;
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -15,7 +15,7 @@ class PlusButton extends StatelessWidget {
       borderRadius: BorderRadius.circular(200),
       child: InkWell(
         borderRadius: BorderRadius.circular(200),
-        onTap: () {},
+        onTap: onTap,
         child: const Padding(
           padding: EdgeInsets.symmetric(horizontal: 22, vertical: 16),
           child: Icon(
