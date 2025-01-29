@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:milania_taxi/reviews.dart';
+import 'package:milania_taxi/search_driver_page.dart';
+import 'package:milania_taxi/take_review.dart';
 
+import 'adreses.dart';
+import 'for_driver.dart';
 import 'login_page.dart';
 
 void main() {
@@ -24,7 +29,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
         useMaterial3: true,
       ),
-      home: const Login(),
+      home: const TakeReview(),
     );
   }
 }
