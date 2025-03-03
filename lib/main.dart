@@ -7,11 +7,13 @@ import 'package:milania_taxi/take_review.dart';
 import 'adreses.dart';
 import 'for_driver.dart';
 import 'login_page.dart';
+import 'main_page_view.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
   setLightSystemBars();
+  // Genera.register();
   runApp(const MyApp());
 }
 
@@ -29,7 +31,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
         useMaterial3: true,
       ),
-      home: const TakeReview(),
+      home: const MainPageView(),
     );
   }
 }
